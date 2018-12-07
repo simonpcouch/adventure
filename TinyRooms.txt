@@ -1,0 +1,37 @@
+OutsideBuilding
+Outside building
+You are standing at the end of a road before a small brick
+building.  A small stream flows out of the building and
+down a gully to the south.  A road runs up a small hill
+to the west.
+-----
+WEST: EndOfRoad
+UP: EndOfRoad
+NORTH: InsideBuilding
+IN: InsideBuilding
+SOUTH: Valley
+DOWN: Valley
+
+EndOfRoad
+End of road
+You are at the end of a road at the top of a small hill.
+You can see a small building in the valley to the east.
+-----
+EAST: OutsideBuilding
+DOWN: OutsideBuilding
+
+InsideBuilding
+Inside building
+You are inside a building, a well house for a large spring.
+The exit door is to the south.
+-----
+SOUTH: OutsideBuilding
+OUT: OutsideBuilding
+
+Valley
+Valley beside a stream
+You are in a valley in the forest beside a stream tumbling
+along a rocky bed.
+-----
+NORTH: OutsideBuilding
+UP: OutsideBuilding

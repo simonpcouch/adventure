@@ -1,0 +1,47 @@
+KEYS
+a set of keys
+InsideBuilding
+
+LAMP
+a brightly shining brass lamp
+BeneathGrate
+
+ROD
+a black rod with a rusty star
+DebrisRoom
+
+WATER
+a bottle of water
+PLAYER
+
+BIRD
+a little bird
+OrangeStoneChamber1
+
+NUGGET
+a nugget of gold
+NuggetRoom
+
+DIAMOND
+a sparkling diamond
+WestBankOfFissure
+
+COINS
+a bag of coins
+EastSideChamber
+
+EMERALD
+an emerald the size of a plover's egg
+EmeraldRoom
+
+EGGS
+a nest of golden eggs
+GiantRoom
+
+PLANT
+a small plant murmuring "Water, water"
+WestPit
+
+CHEST
+a pirate chest
+PirateLair

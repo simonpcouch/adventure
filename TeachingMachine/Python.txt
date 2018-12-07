@@ -1,0 +1,51 @@
+DivQ1
+What is the value of 3 / 2?
+-----
+1: DivQ2
+1.5: DivQ4
+*: DivQ3
+
+DivQ2
+The / operator produces floats.
+What is the value of 9 / 3?
+-----
+3: DivQ2
+3.0: DivQ4
+*: DivQ3
+
+DivQ3
+What is the value of 5 / 4?
+-----
+1.25: DivQ4
+*: DivQ2
+
+DivQ4
+What is the value of 9 // 4?
+-----
+2: ModQ1
+*: DivQ5
+
+DivQ5
+What is the value of 3 // 2?
+-----
+1: ModQ1
+*: DivQ4
+
+ModQ1
+What is the value of 13 % 5?
+-----
+3: Final
+*: ModQ2
+
+ModQ2
+What is the value of 4 % 6?
+-----
+4: Final
+*: ModQ1
+
+Final
+You seem to have mastered Python.
+Would you like to start over?
+-----
+YES: DivQ1
+NO: EXIT

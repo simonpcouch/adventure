@@ -1,0 +1,81 @@
+OutsideBuilding
+You are standing at the end of a road before a
+small brick building.  A small stream flows out
+of the building and down a gully to the south.
+A road runs up a small hill to the west.
+-----
+SOUTH: Valley
+DOWN: Valley
+NORTH: InsideBuilding
+IN: InsideBuilding
+WEST: EndOfRoad
+UP: EndOfRoad
+
+Valley
+You are in a valley in the forest beside a stream
+tumbling along a rocky bed.  The stream is flowing
+to the south.
+-----
+SOUTH: SlitInRock
+DOWN: SlitInRock
+NORTH: OutsideBuilding
+
+SlitInRock
+At your feet all the water of the stream splashes
+down a two-inch slit in the rock.  To the south,
+the streambed is bare rock.
+-----
+NORTH: Valley
+SOUTH: OutsideGrate
+DOWN: OutsideGrate
+
+OutsideGrate
+You are in a 20-foot depression floored with bare
+dirt.  Set into the dirt is a strong steel grate
+mounted in concrete.  A dry streambed leads into
+the depression from the north.
+The grate is open.
+-----
+NORTH: SlitInRock
+UP: SlitInRock
+DOWN: BeneathGrate
+
+BeneathGrate
+You are in a small chamber beneath a 3x3 steel grate
+to the surface.  A low crawl leads over cobbles to
+the west.
+The grate is open.
+-----
+WEST: CobbleCrawl
+UP: OutsideGrate
+
+CobbleCrawl
+You are crawling over cobbles into a low east/west
+passage.  There is a dim light to the east.
+-----
+EAST: BeneathGrate
+WEST: Darkness
+
+Darkness
+It is now pitch dark.  If you proceed you will likely
+fall into a pit.
+-----
+EAST: CobbleCrawl
+XYZZY: InsideBuilding
+*: EXIT
+
+InsideBuilding
+You are inside a building, a well house for a large
+spring.
+-----
+OUT: OutsideBuilding
+SOUTH: OutsideBuilding
+XYZZY: Darkness
+
+EndOfRoad
+You are on a road at the top of a small hill.  You
+can see a small brick building at the end of the road
+to the east.
+-----
+EAST: OutsideBuilding
+DOWN: OutsideBuilding

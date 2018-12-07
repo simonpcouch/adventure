@@ -1,0 +1,117 @@
+OutsideBuilding
+Outside building
+You are standing at the end of a road before a small brick
+building.  A small stream flows out of the building and
+down a gully to the south.  A road runs up a small hill
+to the west.
+-----
+WEST: EndOfRoad
+UP: EndOfRoad
+NORTH: InsideBuilding
+IN: InsideBuilding
+SOUTH: Valley
+DOWN: Valley
+
+EndOfRoad
+End of road
+You are at the end of a road at the top of a small hill.
+You can see a small building in the valley to the east.
+-----
+EAST: OutsideBuilding
+DOWN: OutsideBuilding
+
+InsideBuilding
+Inside building
+You are inside a building, a well house for a large spring.
+The exit door is to the south.
+-----
+SOUTH: OutsideBuilding
+OUT: OutsideBuilding
+XYZZY: DebrisRoom/LAMP
+XYZZY: Darkness
+
+Valley
+Valley beside a stream
+You are in a valley in the forest beside a stream tumbling
+along a rocky bed.  The stream is flowing to the south.
+-----
+NORTH: OutsideBuilding
+UP: OutsideBuilding
+SOUTH: SlitInRock
+DOWN: SlitInRock
+
+SlitInRock
+Slit in rock
+At your feet all the water of the stream splashes into a
+two-inch slit in the rock.  To the south, the streambed is
+bare rock.
+-----
+NORTH: Valley
+UP: Valley
+SOUTH: OutsideGrate
+DOWN: OutsideGrate
+
+OutsideGrate
+Outside grate
+You are in a 20-foot depression floored with bare dirt.
+Set into the dirt is a strong steel grate mounted in
+concrete.  A dry streambed leads into the depression from
+the north.
+-----
+NORTH: SlitInRock
+UP: SlitInRock
+DOWN: BeneathGrate/KEYS
+DOWN: MissingKeys
+
+MissingKeys
+-
+The grate is locked and you don't have any keys.
+-----
+FORCED: OutsideGrate
+
+BeneathGrate
+Beneath grate
+You are in a small chamber beneath a 3x3 steel grate to
+the surface.  A low crawl over cobbles leads inward to
+the west.
+-----
+UP: OutsideGrate
+OUT: OutsideGrate
+IN: CobbleCrawl
+WEST: CobbleCrawl
+
+CobbleCrawl
+Cobble crawl
+You are crawling over cobbles in a low east/west passage.
+There is a dim light to the east.
+-----
+EAST: BeneathGrate
+WEST: DebrisRoom/LAMP
+WEST: Darkness
+
+Darkness
+Darkness
+It is now pitch dark.  If you proceed you will likely fall
+into a pit.
+-----
+EAST: CobbleCrawl
+OUT: CobbleCrawl
+XYZZY: InsideBuilding
+PLUGH: InsideBuilding
+*: Pit
+
+Pit
+-
+You fell into a pit and broke every bone in your body!
+-----
+FORCED: EXIT
+
+DebrisRoom
+Debris room
+You are in a debris room filled with stuff washed in from
+the surface.  A low wide passage with cobbles becomes
+plugged with mud and debris here, but an extremely narrow
+canyon leads upward and west.  Unfortunately, the passage
+is blocked by a barrier marked "Under Construction."
+-----
+EAST: CobbleCrawl

@@ -1,0 +1,15 @@
+KEYS
+a set of keys
+InsideBuilding
+
+LAMP
+a brightly shining brass lamp
+BeneathGrate
+
+ROD
+a black rod with a rusty star
+DebrisRoom
+
+WATER
+a bottle of water
+PLAYER
